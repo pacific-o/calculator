@@ -9,13 +9,10 @@ body {
 
 .calc {
     width: 435px;
-    height: 645px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
-    justify-content: center;
-    align-items: center;
     font-size: 30px;
     margin-top: 50px;
     background-color:#b3b3b3;
@@ -65,4 +62,17 @@ body {
 
 .operator:active {
     background-color: #ff4400;
+}
+
+@media only screen and (max-width: 480px) {
+  
+.calc {
+    width: 295px;
+    font-size: 26px;
+  }
+
+.calc-btn {
+    height: 65px;
+    font-size: 22px;
+  }
 }
